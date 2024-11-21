@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Taste Haven | About Us</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url('images/Background2.png'), linear-gradient(to bottom right, white, white);
+  background-size: cover, cover;
+  background-attachment: fixed;
+  color: darkblue;
+}
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(34, 47, 62, 0.8);
+  padding: 1rem;
+  z-index: 10;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar h1 {
+  color: goldenrod;
+  font-size: 1.8rem;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#navbar ul li a {
+  color: orange;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+#navbar ul li a:hover {
+  color: #f39c12;
+}
+#about {
+  padding-top: 100px;
+  width: 80%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease;
+}
+
+#section {
+  color: skyblue;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.about_col h2 {
+  color: purple;
+  font-size: 1.8rem;
+}
+
+.about_col p {
+  margin: 1rem 0;
+  color: #34495e;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#about_img img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#scrollToTop {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#scrollToTop:hover {
+  background-color: #c0392b;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav id="navbar">
+            <h1>Taste Haven</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="chef.html">Chef</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="about">
+        <h1 id="section">About Us</h1>
+        <div id="about_row">
+            <div class="about_col">
+                <h2>Our Story</h2>
+                <p>
+                    Discover the future of dining at Elite, where sustainability meets urban sophistication. Our restaurant boasts a stunning vertical garden that supplies fresh herbs and vegetables directly to your plate, ensuring a farm-to-table experience like no other. The menu, crafted by our talented chefs, features innovative dishes that blend modern techniques with seasonal, locally-sourced ingredients.
+                </p>
+                <p>
+                    At Urban Harvest Kitchen, every meal is an interactive journey. Guests can engage with our culinary experts in live cooking sessions, learning the secrets behind each dish. The restaurant’s chic, industrial design, combined with green elements, creates a warm, inviting atmosphere perfect for both casual dining and special occasions.
+                </p>
+                <p>
+                    Whether you're enjoying a hearty brunch, a relaxed lunch, or an elegant dinner, Urban Harvest Kitchen promises a memorable culinary adventure. With a commitment to sustainability and a passion for exceptional food, we invite you to experience the perfect harmony of nature and urban life. Join us for a dining experience that not only delights the palate but also nurtures the planet. 🌿🍽️
+                </p>
+                <button id="scrollToTop">Back to Top</button>
+            </div>
+            <div class="about_col">
+                <div id="about_img">
+                    <img src="images/about.png" alt="About Us Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

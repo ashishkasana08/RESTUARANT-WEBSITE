@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Recipe - Taste Haven</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            /* background: url('images') no-repeat center center fixed; */
+            background-size: cover;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        #navbar {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #navbar h1 {
+            font-size: 1.8rem;
+            color: #e224d3;
+        }
+
+        #navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        #navbar ul li a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        #navbar ul li a:hover {
+            color: #cc4cb3;
+        }
+
+        #recipe-container {
+            margin-top: 80px;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        #recipe-container h1 {
+            font-size: 2.5rem;
+            color: #14c948;
+            margin-bottom: 20px;
+        }
+
+        .recipe {
+            margin-bottom: 40px;
+            text-align: left;
+            color: #e0e0e0;
+        }
+
+        .recipe h2 {
+            color: #1edae0;
+            font-size: 1.8rem;
+        }
+
+        .recipe p {
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        .recipe iframe {
+            width: 100%;
+            height: 315px;
+            margin-top: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <nav id="navbar">
+            <h1>Taste Haven</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="chef.html">Chef</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="recipe-container">
+        <h1>Signature Dishes & Recipes</h1>
+
+        <div class="recipe">
+            <h2>Chiken Curry</h2>
+            <p>This flavorful dish is packed with traditional Indian spices. Our chef's unique blend of masalas brings out rich, aromatic flavors, creating an unforgettable experience with each bite.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JH5swnkC8Ig?si=RlEHLNh8E9iE5NVG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="recipe">
+            <h2>Chiken Briyani</h2>
+            <p>"Discover the rich, aromatic layers of our Chicken Biryani, a culinary treasure that combines tender, marinated chicken with fragrant basmati rice. Slowly cooked to perfection with a blend of traditional spices, each bite is a celebration of flavor. Whether paired with raita or enjoyed on its own, this dish promises a delightful experience that will transport you straight to the heart of Indian cuisine!" </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YTYtKuLwl9U?si=saeHrCkBFmXpk3Fg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="recipe">
+            <h2> paneer Mushroom Masala</h2>
+            <p>"Indulge in our Mushroom Masala, where succulent mushrooms are sautéed with a medley of spices, tomatoes, and herbs to create a rich, flavorful dish. This vegetarian delight is a perfect balance of earthy and spicy, making it a favorite among mushroom lovers. Served with fluffy naan or steamed rice, its a comforting and delicious choice for any meal!"</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-7xbAtop5E8?si=TDP2uUkiymkbmj_L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="recipe">
+            <h2>Kadai panner</h2>
+            <p>"Enjoy the bold flavors of our Kadai Paneer - a classic Indian dish with soft paneer cubes, bell peppers, and onions cooked in a spicy, aromatic gravy. Infused with freshly ground spices, each bite brings a burst of flavor that's both hearty and satisfying. Perfect with naan or rice, it's a delicious treat for any spice lover!"</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GdoPmVID08I?si=8Y46CNeuZQNGeoi2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>

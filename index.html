@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste Haven</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(51, 51, 51, 0.9);  
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+  
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+  color: white;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  
+}
+#navbar ul li{
+  margin-right: 4pc;
+}
+
+#navbar ul li a {
+  color: #ffeb3b;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+#navbar ul li a:hover {
+  color: #ffd54f;
+  
+}
+
+#hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Screenshot 2024-11-21 201240.png') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  animation: fadeIn 2s ease;
+}
+
+#hero h1 {
+  font-size: 3rem;
+}
+
+#hero h2 {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  color: white;
+  background: #ff6347;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition:  0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #e5533d;
+}
+
+#featured-dishes {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+#featured-dishes h2 {
+  color: #ff6347;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.dishes {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.dish {
+  background: white;
+  width: 300px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  padding: 1rem;
+}
+
+.dish img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.dish:hover {
+  transform: translateY(-10px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav id="navbar">
+            <img src="./Screenshot 2024-11-21 200651.png" alt="Taste Haven" width="90" height="90" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="chef.html">Chef</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div id="phone">
+                <i class="fa fa-phone"></i>&nbsp; 9671894221
+            </div>
+        </nav>
+    </header>
+    <section id="hero">
+        <div id="hero_content">
+            <h1>Taste Haven</h1>
+            <h2>Best Quality and Tasty Food Point</h2>
+            <a href="menu.html" class="hero-btn">View Menu</a>
+        </div>
+    </section>
+    <section id="featured-dishes">
+        <h2>Our Featured Dishes</h2>
+        <p>Taste the best from our kitchen, crafted with love and passion.</p>
+        
+        <div class="dishes">
+            <div class="dish">
+                <img src="images/amritsari fish tikka.webp" alt="Grilled Salmon">
+                <h3>Amritsari fish tikka</h3>
+                <p>"Experience the true taste of Punjab with our Amritsari Fish Tikka.</p>
+            </div>
+            <div class="dish">
+                <img src="images/hydrabadi vej dam briyani.jpg" alt="Hyderabadi Veg Dum Biryani">
+                <h3>Hyderabadi Veg Dum Biryani</h3>
+                <p>"Savor the royal flavors of Hyderabad with our Veg Dum Biryani – a fragrant, slow-cooked masterpiece layered with fresh vegetables, aromatic spices, and basmati rice. A rich, vegetarian delight that brings tradition to your plate!"
+                </p>
+            </div>
+            <div class="dish">
+                <img src="images/panner buter masala.jpg" alt="paneer butter masala">
+                <h3>Paneer butter masala</h3>
+                <p>"Indulge in our Paneer Butter Masala creamy, buttery goodness that melts in your mouth! Perfectly spiced and simmered to perfection, this classic favorite will take your taste buds on a delightful journey. A must-try for every curry lover!"</p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

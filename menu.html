@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Taste Haven - Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: darkmagenta;
+            color: #333;
+        }
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: rgba(51, 51, 51, 0.9);
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            max-width: 1200px;
+            margin: auto;
+            color: white;
+        }
+        #navbar h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        #navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+        #navbar ul li a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        #navbar ul li a:hover {
+            color: #ffd54f;
+        }
+        #menu {
+            padding: 100px 0 50px;
+            text-align: center;
+        }
+        #section {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        #menu_row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+        #menu_col {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            background-color: white;
+            overflow: hidden;
+            width: 300px;
+            margin: 10px;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+        #menu_col:hover {
+            transform: scale(1.05);
+        }
+        #menu_col h2 {
+            background-color: #495294;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: -15px -15px 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+        }
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 15px 0;
+        }
+        #image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            padding: 5px;
+            border: 2px solid rgb(80, 121, 130);
+            overflow: hidden;
+        }
+        #image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .box h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 10px 0 5px;
+        }
+        .box h4 {
+            font-size: 1rem;
+            color: #555;
+            font-weight: 400;
+        }
+        footer {
+            background: #704646;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #ffd54f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <h1>Taste Haven</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="Chef.html">Chef</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="menu">
+        <h1 id="section">Menu</h1>
+        <div id="menu_row"> 
+            <div id="menu_col">
+                <h2>Breakfast</h2>
+                <div class="box">
+                    <div id="image">
+                        <a href="recipi.html"><img src="images/panner dosa.jpg" alt="tasty panner dosa"></a>
+                    </div>
+                    <div>
+                        <h3>Tasty panner dosa<br>
+                            In dosa we crust! 🌶️
+                        </h3>
+                        <h4><bold>149 rupees</bold></h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <a href="recipi.html"><img src="images/Idli-and-Sambar-1.jpg" alt="Tasty Dish 02"></a>
+                    </div>
+                    <div>
+                        <h3>Tasty Idli</h3>
+                        <h4>80 rupees</h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <a href="recipi.html"><img src="images/poha.jpg" alt="Tasty Dish 03"></a>
+                    </div>
+                    <div>
+                        <h3>Tasty poha</h3>
+                        <h4>89 rupees</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="menu_col">
+                <h2>Lunch</h2>
+                <div class="box">
+                    <div id="image">
+                        <a href="recipi.html"><img src="images/chiken cury.webp" alt="Tasty Dish 01"></a>
+                    </div>
+                    <div>
+                        <h3>Chicken curry</h3>
+                        <h4>499 rupees</h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <a href="recipi.html"><img src="images/vej thali.avif" alt="Tasty Dish 02"></a>
+                    </div>
+                    <div>
+                        <h3>Vej thali</h3>
+                        <h4>299 rupees</h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <a href="recipi.html"><img src="images/dry manchuriyan.jpg" alt="Tasty Dish 03"></a>
+                    </div>
+                    <div>
+                        <h3>Dry manchuriyan</h3>
+                        <h4>250 rupees</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="menu_col">
+                <h2>Dinner</h2>
+                <div class="box">
+                    <div id="image">
+                        <a href="recipi.html"><img src="images/Chicken-Biryani_resized.webp" alt="Tasty Dish 01"></a>
+                    </div>
+                    <div>
+                        <h3>Chiken Briyani</h3>
+                        <h4>450 rupees</h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <a href="recipi.html"><img src="images/Tangy-Mushroom-Masala-with-Matar-3-500x500.jpg" alt="Tasty Dish 02"></a>
+                    </div>
+                    <div>
+                        <h3>Mushroom-Masala</h3>
+                        <h4>350 rupees</h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <a href="recipi.html"><img src="images/kadai-paneer-recipe.jpg" alt="Tasty Dish 03"></a>
+                    </div>
+                    <div>
+                        <h3>Kadai-paneer</h3>
+                        <h4>$30</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Taste Heaven. All rights reserved.</p>
+    </footer>
+</body>
+</html>
